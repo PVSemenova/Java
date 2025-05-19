@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.library.MainController">
+   <top>
+      <ToolBar>
+         <Button text="Add Book" onAction="#onAddBook" />
+         <Button text="Refresh" onAction="#onRefresh" />
+         <Button text="Edit Book" onAction="#onEditBook" />
+         <Button text="Delete Book" onAction="#onDeleteBook" />
+      </ToolBar>
+   </top>
+   <center>
+      <TableView fx:id="bookTable">
+         <columns>
+            <TableColumn text="ID" fx:id="colId" />
+            <TableColumn text="Title" fx:id="colTitle" />
+            <TableColumn text="Author" fx:id="colAuthor" />
+            <TableColumn text="Genre" fx:id="colGenre" />
+            <TableColumn text="Year" fx:id="colYear" />
+         </columns>
+      </TableView>
+   </center>
+</BorderPane>
